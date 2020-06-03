@@ -6,19 +6,40 @@ int main()
 {
     //unsigned int lval = (2147483640 + 8); It will result in over-flow because value
     //inside the brackets is int i.e. 4bytes but adding 8 will result in 4bytes + 1 bit
-    int lval = 0x80;
-    int aval = 0xFEDCBA98;
+    int lval = 0x80000000;
+    int aval = 0x80;
     unsigned uval = 0x80000000;
-    cout << lval << '\n';
+    //------------------------------------------------------------------------------------
+    cout << "logical Right Shift\n";
+    cout << "Before Shift\n";
+    printf("aval = %x\n", aval);
+    printf("uval = %x\n", uval);
+    aval >>= 31;
+    uval >>= 2;
+    cout << "After Shift\n";
+    printf("aval = %x\n", aval);
+    printf("uval = %xn", uval);
+    //------------------------------------------------------------------------------------
+    cout << "Arithmetic Right Shift\n";
+    cout << "Before Shift\n";
+    lval >>= 31;
+    cout << "After Shift\n";
+    printf("lval = %x\n", lval);
+    //------------------------------------------------------------------------------------
+    int lval = 0x80000000;
+    int aval = 0x80;
+    unsigned uval = 0x80000000;
+    //------------------------------------------------------------------------------------
+    cout << "left Shift\n";
     cout << "Before Shift\n";
     printf("lval = %x\n", lval);
     printf("aval = %x\n", aval);
     printf("uval = %x\n", uval);
-    lval >>= 31;
-    aval = 0xFEDCBA98 >> 31;
+    aval >>= 31;
     uval >>= 2;
-    printf("lval = %u\n", lval);
+    cout << "After Shift\n";
+    printf("lval = %x\n", lval);
     printf("aval = %x\n", aval);
-    printf("uval = %d\n", uval);
+    printf("uval = %xn", uval);
     return 0;
 }
