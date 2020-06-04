@@ -18,28 +18,30 @@ int main()
     uval >>= 2;
     cout << "After Shift\n";
     printf("aval = %x\n", aval);
-    printf("uval = %xn", uval);
+    printf("uval = %x\n", uval);
     //------------------------------------------------------------------------------------
     cout << "Arithmetic Right Shift\n";
     cout << "Before Shift\n";
+    printf("lval = %x\n", lval);
     lval >>= 31;
     cout << "After Shift\n";
     printf("lval = %x\n", lval);
     //------------------------------------------------------------------------------------
-    int lval = 0x80000000;
-    int aval = 0x80;
-    unsigned uval = 0x80000000;
+    lval = 0x0fffffff;
+    aval = 0x80;
+    uval = 0x80000000;
     //------------------------------------------------------------------------------------
     cout << "left Shift\n";
     cout << "Before Shift\n";
     printf("lval = %x\n", lval);
     printf("aval = %x\n", aval);
     printf("uval = %x\n", uval);
-    aval >>= 31;
-    uval >>= 2;
+    lval <<= 31;
+    aval <<= 24;
+    uval <<= 2;
     cout << "After Shift\n";
     printf("lval = %x\n", lval);
     printf("aval = %x\n", aval);
-    printf("uval = %xn", uval);
+    printf("uval = %x\n", uval);
     return 0;
 }
