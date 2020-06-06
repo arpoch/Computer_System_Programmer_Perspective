@@ -33,5 +33,17 @@ int main()
     cout << "\t\tThe smalledt possible value with w=16 is UMIN[10000000 00000000] = "
          << INT16_MIN << '\n';
     cout << "3 : ones' Complement Encoding\n";
+    cout << "\t>Binary to Signed(w=4)\n";
+    cout << "\t\tB2U[1111] = "
+         << ((1 * (2 * 2 * 2)) - 1) + (1 * (2 * 2)) + (1 * (2)) + (1)
+         << '\n';
+    cout << "\t>Range of Signed 4bit(nible) from -(2^w-1 -1) to (2^w-1)\n";
+    cout << "\t\tThe greatest possible value with w=4 is UMAX[0111] = 2^w -1(as we count 0)"
+         << "7" << '\n';
+    cout << "\t\tThe smalledt possible value with w=4 is UMIN[1000] = "
+         << " - 7 " << '\n';
+    cout << "\t\tThe smalledt possible value with w=4 is UMIN[0000] = "
+         << "1000 (In Binary)" << '\n';
+    cout << "\t>Uniqueness of unsigned encoding\n";
     return 0;
 }
