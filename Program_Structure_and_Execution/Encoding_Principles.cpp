@@ -1,5 +1,6 @@
 #include <iostream>
 #include <math.h>
+#include <limits.h>
 using std::cout;
 int main()
 {
@@ -26,5 +27,9 @@ int main()
     cout << "\t\tB2U[1111] = "
          << (-1 * (2 * 2 * 2 * 2)) + (1 * (2 * 2 * 2)) + (1 * (2 * 2)) + (1 * (2))
          << '\n';
+    cout << "\t\tThe greatest possible value with w=16 is UMAX[11111111 11111111] = 2 ^ w - 1(as we count 0)"
+         << INT16_MAX << '\n';
+    cout << "\t\tThe smalledt possible value with w=4 is UMIN[10000000 00000000] = "
+         << INT16_MIN << '\n';
     return 0;
 }
