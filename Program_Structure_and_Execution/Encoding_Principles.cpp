@@ -31,7 +31,7 @@ int main()
           << INT16_MAX << '\n';
      cout << "\t\tThe smalledt possible value with w=16 is TMIN[10000000 00000000] = "
           << INT16_MIN << '\n';
-     cout << "UMAX = TMAX +1 (16bit) = " << INT16_MAX + 1 << '\n';
+     cout << "UMAX = 2TMAX +1 (16bit) = " << (2 * INT16_MAX) + 1 << '\n';
      //---------------------------------------------------------------------------
      //----Principle => B2O = (- (x.w-1)*(2^w-1 -1) ) + (i=w-2[summation]i=0) (xi*2^i)
      //Taking the weight of MSB -ve
