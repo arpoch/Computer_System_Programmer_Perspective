@@ -43,7 +43,7 @@ int main()
      cout << "\t\tThe greatest possible value with w=4 is OMAX[0111] = "
           << "7" << '\n';
      cout << "\t\tThe smalledt possible value with w=4 is OMIN[1000] = "
-          << " - 14 " << '\n';
+          << " -7 " << '\n';
      cout << "\t\tRepresentation of -0 with w=4 is = "
           << "1111 (In Binary)" << '\n';
      //--------------------------------------------------------------------------
@@ -54,9 +54,9 @@ int main()
           << '\n';
      cout << "\t>Range of Signed 4bit(nible)\n";
      cout << "\t\tThe greatest possible value with w=4 is SMAX[0111] = "
-          << "15" << '\n';
+          << "7" << '\n';
      cout << "\t\tThe smalledt possible value with w=4 is SMIN[1111] = "
-          << " - 15 " << '\n';
+          << " -7 " << '\n';
      cout << "\t\tRepresentation of -0 with w=4 is = "
           << "1000 (In Binary)" << '\n';
      return 0;
