@@ -20,7 +20,7 @@ int main()
     //-------------Implicit Casting by Compiler-------------
     unsigned usn_32 = UINT32_MAX;
     int sn_32 = usn_32;
-    cout << "usn_32 = " << usn_32 << "\ntsn_32 = " << sn_32 << '\n';
+    cout << "usn_32 = " << usn_32 << "\nsn_32 = " << sn_32 << '\n';
     //---------------Two's Complement to Unsigned(Numeric Value)-------------------
     cout << "Two's complement value (-ve) = " << sn_16 << '\n';
     if (sn_16 < 0)
@@ -54,8 +54,12 @@ int main()
     cout << "sn = " << sn_32 << " : ";
     show_bytes((byte_pointer)&sn_32, sizeof(int));
     //--------Conversion from Signed(16bit) to Unsigned(32bit)-----------
-    cout << "Conversion from Signed(16bit) to Unsigned(32bit)\n";
+    cout << "Implicit Conversion from Signed(16bit) to Unsigned(32bit)\n";
     usn_32 = sn_16;
+    cout << "uval_32 = " << usn_32 << " : ";
+    show_bytes((byte_pointer)&usn_32, sizeof(int));
+    cout << "Explicit Conversion from Signed(16bit) to Unsigned(32bit)\n";
+    usn_32 = (unsigned)(unsigned short)sn_16;
     cout << "uval_32 = " << usn_32 << " : ";
     show_bytes((byte_pointer)&usn_32, sizeof(int));
     return 0;
