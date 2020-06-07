@@ -55,9 +55,8 @@ int main()
     show_bytes((byte_pointer)&sn_32, sizeof(int));
     //--------Conversion from Signed(16bit) to Unsigned(32bit)-----------
     cout << "Conversion from Signed(16bit) to Unsigned(32bit)\n";
-    short sval_16 = -12345;
-    unsigned uval_32 = sval_16;
-    cout << "uval_32 = " << uval_32 << " : ";
-    show_bytes((byte_pointer)&sn_32, sizeof(int));
+    usn_32 = sn_16;
+    cout << "uval_32 = " << usn_32 << " : ";
+    show_bytes((byte_pointer)&usn_32, sizeof(int));
     return 0;
 }
