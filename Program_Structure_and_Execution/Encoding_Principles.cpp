@@ -10,10 +10,9 @@ int main()
      cout << "\t\tB2U[1111] = "
           << (1 * (2 * 2 * 2)) + (1 * (2 * 2)) + (1 * (2)) + (1)
           << '\n';
-     unsigned short UMAX = pow(4, 2);
      cout << "\t>Range of Unsigned 4bit(nible) 0 to 2^w \n";
      cout << "\t\tThe greatest possible value with w=4 is UMAX[1111] ="
-          << UMAX << '\n';
+          << 15 << '\n';
      cout << "\t\tThe smalledt possible value with w=4 is UMIN[0000] = " << 0 << '\n';
      cout << "\t>Uniqueness of unsigned encoding\n";
      //No other value can have this encoding
