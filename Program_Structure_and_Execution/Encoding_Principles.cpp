@@ -28,7 +28,7 @@ int main()
           << (-1 * (2 * 2 * 2)) + (1 * (2 * 2)) + (1 * (2)) + (1)
           << '\n';
      cout << "\t>Range of Two’s-Complement 16bit (2^w-1 to (2^w-1) -1) \n";
-     cout << "\t\tThe greatest possible value with w=16 is TMAX[11111111 11111111](as we count 0) = "
+     cout << "\t\tThe greatest possible value with w=16 is TMAX[01111111 11111111](as we count 0) = "
           << INT16_MAX << '\n';
      cout << "\t\tThe smalledt possible value with w=16 is TMIN[10000000 00000000] = "
           << INT16_MIN << '\n';
@@ -43,7 +43,7 @@ int main()
      cout << "\t\tThe greatest possible value with w=4 is OMAX[0111] = "
           << "7" << '\n';
      cout << "\t\tThe smalledt possible value with w=4 is OMIN[1000] = "
-          << " - 7 " << '\n';
+          << " - 14 " << '\n';
      cout << "\t\tRepresentation of -0 with w=4 is = "
           << "1111 (In Binary)" << '\n';
      //--------------------------------------------------------------------------
