@@ -17,7 +17,7 @@ int main()
      cout << "\t\tThe smalledt possible value with w=4 is UMIN[0000] = " << 0 << '\n';
      cout << "\t>Uniqueness of unsigned encoding\n";
      //No other value can have this encoding
-     cout << "\t\tU2B[15] = "
+     cout << "\t\tU2B[16] = "
           << "1111" << '\n';
      //---------------------------------------------------------------------------
      cout << "2 : Two’s-Complement Encoding\n";
@@ -39,7 +39,7 @@ int main()
           << (-1 * ((2 * 2 * 2) - 1)) + (1 * (2 * 2)) + (1 * (2)) + (1)
           << '\n';
      cout << "\t>Range of Signed 4bit(nible) from -(2^w-1 -1) to (2^w-1 -1)\n";
-     cout << "\t\tThe greatest possible value with w=4 is OMAX[0111] = 2^w-1"
+     cout << "\t\tThe greatest possible value with w=4 is OMAX[0111] = "
           << "7" << '\n';
      cout << "\t\tThe smalledt possible value with w=4 is OMIN[1000] = "
           << " - 7 " << '\n';
@@ -49,7 +49,7 @@ int main()
      cout << "4 : Signed Magnitude Encoding\n";
      cout << "\t>Binary to Signed Magnitude(w=4)\n";
      cout << "\t\tB2U[1111] = "
-          << (-1) * ((1 * (2 * 2)) + (1 * (2)) + (1))
+          << (-1) * ((1 * (2 * 2 * 2)) + (1 * 2 * 2) + (1 * (2)) + (1))
           << '\n';
      cout << "\t>Range of Signed 4bit(nible)\n";
      cout << "\t\tThe greatest possible value with w=4 is SMAX[0111] = "
