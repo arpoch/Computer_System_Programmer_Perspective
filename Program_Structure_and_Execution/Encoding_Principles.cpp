@@ -16,7 +16,7 @@ int main()
      cout << "\t\tThe smalledt possible value with w=4 is UMIN[0000] = " << 0 << '\n';
      cout << "\t>Uniqueness of unsigned encoding\n";
      //No other value can have this encoding
-     cout << "\t\tU2B[16] = "
+     cout << "\t\tU2B[15] = "
           << "1111" << '\n';
      //---------------------------------------------------------------------------
      cout << "2 : Two’s-Complement Encoding\n";
