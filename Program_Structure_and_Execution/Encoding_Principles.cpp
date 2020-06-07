@@ -32,6 +32,7 @@ int main()
           << INT16_MAX << '\n';
      cout << "\t\tThe smalledt possible value with w=16 is TMIN[10000000 00000000] = "
           << INT16_MIN << '\n';
+     cout << "UMAX = TMAX +1 (16bit) = " << INT16_MAX + 1 << '\n';
      //---------------------------------------------------------------------------
      cout << "3 : Ones' Complement Encoding\n";
      cout << "\t>Binary to Signed(w=4)\n";
