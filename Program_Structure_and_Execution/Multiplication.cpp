@@ -3,7 +3,7 @@
 using std::cout;
 int main()
 {
-    cout << "Multiplication\n";
+    cout << "Multiplication Operation\n";
     cout << "Unsigned Multiplication\n";
     uint8_t us_x = 0x06;
     uint8_t us_y = 0x03;
@@ -19,10 +19,14 @@ int main()
     cout << "Explicit Multiplication of x and y = " << ((s_x * s_y) % power) << '\n';
     cout << "Multiplication by constant\n";
     cout << "Unsigned Multiplication by power of 2\n";
-    int32_t un_s32 = 11;
+    uint32_t un_s32 = 11;
     cout << "Multiplying " << un_s32 << " by 8 (lefting shifting the number by the zeros)\n";
     un_s32 <<= 3;
     cout << "11 * 8 = " << un_s32 << "\n";
-
+    cout << "Signed Multiplication by power of 2\n";
+    int32_t s_n32 = -11;
+    cout << "Multiplying " << s_n32 << " by 8 (lefting shifting the number by the zeros)\n";
+    s_n32 <<= 3;
+    cout << "-11 * 8 = " << s_n32 << "\n";
     return 0;
 }
